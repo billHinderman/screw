@@ -84,6 +84,12 @@
                         <div class="section-content">
                             <h2>How much stake does each team member have in the project?</h2>
 
+                            <ul class="optons-list">
+                                <li>
+                                    <i class="radio"></i>
+                                    <span class="option-text"></span>
+                                </li>
+                            </ul>
 
                             <button class="increment">Next <i class="fa fa-chevron-right"></i></button>
                         </div>
@@ -93,6 +99,29 @@
                         <div class="section-content">
                             <h2>How will you make decisions?</h2>
 
+                            <ul class="optons-list">
+                                <li>
+                                    <i class="radio"></i>
+                                    <span class="option-text">_ has the decding vote</span>
+                                </li>
+                                <li>
+                                    <i class="radio"></i>
+                                    <span class="option-text">Majority of team</span>
+                                </li>
+                                <li>
+                                    <i class="radio"></i>
+                                    <span class="option-text">Majority stake-holder</span>
+                                </li>
+                                <li>
+                                    <i class="radio"></i>
+                                    <span class="option-text">Unanimously</span>
+                                </li>
+                                <li>
+                                    <i class="radio"></i>
+                                    <span class="option-text">Other</span>
+                                </li>
+                            </ul>
+
                             <button class="increment">Next <i class="fa fa-chevron-right"></i></button>
                         </div>
                     </section>
@@ -101,13 +130,37 @@
                         <div class="section-content">
                             <h2>If things don't work out, what happens to the project?</h2>
 
+                            <ul class="optons-list">
+                                <li>
+                                    <i class="radio"></i>
+                                    <span class="option-text">_ is given all assets, and we move on</span>
+                                </li>
+                                <li>
+                                    <i class="radio"></i>
+                                    <span class="option-text">We each have the opportunity to buy the others out</span>
+                                </li>
+                                <li>
+                                    <i class="radio"></i>
+                                    <span class="option-text">We will all agree not to use any branding that we’ve developed for the project, but we’ll each be able to take any code or other development work away under license and do our own thing</span>
+                                </li>
+                                <li>
+                                    <i class="radio"></i>
+                                    <span class="option-text">Other</span>
+                                </li>
+                            </ul>
+
                             <button class="increment">Let's double-check <i class="fa fa-check-square"></i></button>
                         </div>
                     </section>
 
                     <section class="section review" id="review" data-fill data-submittable="false">
-                        <h2>Does this look right?</h2>
-                        <a class="button submit">Download your screw<i class="fa fa-download"></i></a>
+                        <div class="unsubmittable">
+                            <h2>Please fill out all fields to prepare your screw for download.</h2>
+                        </div>
+                        <div class="submittable">
+                            <h2>Does this look correct?</h2>
+                            <a class="button submit">Download your screw<i class="fa fa-download"></i></a>
+                        </div>
                     </section>
                 </div>
             </div>
@@ -144,7 +197,7 @@
                             <i class="fa fa-circle"></i>
                         </a>
                     </li>
-                    <li class="review" data-complete="incomplete">
+                    <li class="review" data-valid="incomplete">
                         <a href="#review">
                             <i class="fa fa-circle-o"></i>
                         </a>
