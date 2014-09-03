@@ -1,0 +1,96 @@
+/************************************************************
+GRID
+************************************************************/
+
+/******************************
+Row and Column Setup
+******************************/
+[class^="row"],
+[class*=" row"] {
+  display: block;
+  position: relative;
+  width: 100%;
+  *zoom: 1;
+
+  &:before, &:after { 
+      content: "";
+      display: table;
+  }
+  &:after {
+      clear: both;
+  }
+}
+[class^="col-"],
+[class*=" col-"] {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (min-width: $small) {
+  .row-12 {
+    @for $col from 1 through 3 {
+      .col-s-#{$col} {
+        width: percentage($col/3)
+      }
+      .offset-s-#{$col} {
+        left: percentage($col/3)
+      }
+    }
+  }
+  .row-16 {
+    @for $col from 1 through 4 {
+      .col-s-#{$col} {
+        width: percentage($col/4)
+      }
+      .offset-s-#{$col} {
+        left: percentage($col/4)
+      }
+    }
+  }
+}
+@media screen and (min-width: $medium) {
+  .row-12 {
+    @for $col from 1 through 6 {
+      .col-m-#{$col} {
+        width: percentage($col/6)
+      }
+      .offset-m-#{$col} {
+        left: percentage($col/6)
+      }
+    }
+  }
+  .row-16 {
+    @for $col from 1 through 8 {
+      .col-m-#{$col} {
+        width: percentage($col/8)
+      }
+      .offset-m-#{$col} {
+        left: percentage($col/8)
+      }
+    }
+  }
+}
+@media screen and (min-width: $large) {
+  .row-12 {
+    @for $col from 1 through 12 {
+      .col-l-#{$col} {
+        width: percentage($col/12)
+      }
+      .offset-l-#{$col} {
+        left: percentage($col/12)
+      }
+    }
+  }
+  .row-16 {
+    @for $col from 1 through 16 {
+      .col-l-#{$col} {
+        width: percentage($col/16)
+      }
+      .offset-l-#{$col} {
+        left: percentage($col/16)
+      }
+    }
+  }
+}

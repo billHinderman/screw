@@ -1,0 +1,41 @@
+.content {
+	background: $white;
+	color: $black;
+	padding: 1em;
+	@media screen and (min-width: $medium) {
+		padding: 1em 2em;
+	}
+}
+.content-container {
+	margin: auto;
+	max-width: 44em;
+}
+
+.section.about {
+	p {
+		font-size: 1.5em;
+		line-height: 1.25em;
+		margin-bottom: 1em;
+	}
+	p.important {
+		font-size: 3em;
+		font-style: italic;
+		font-weight: 100;
+		margin-bottom: .5em;
+	}
+}
+
+.section.form {
+	border-top: .125em solid $nonwhite;
+	display: table;
+	width: 100%;
+	.section-content {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+.section.review {
+	background: $nonwhite;
+	padding: 1em;
+	margin: 1em -1em 0;
+}

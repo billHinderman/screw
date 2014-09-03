@@ -1,0 +1,50 @@
+/************************************************************
+TABLES
+************************************************************/
+table {
+  
+}
+thead {
+  font-weight: 700;
+}
+td, th {
+  padding: .25em;
+}
+
+table.table-border {
+  td, th {
+    border: 1px solid $greyMd;
+  }
+  thead td,
+  thead th {
+    border-bottom: 2px solid $greyMd;
+  }
+}
+
+table.table-rule {
+  tbody tr,
+  tfoot tr {
+    border-top: 1px dotted $greyMd;
+  }
+}
+table.table-stripe {
+  tbody > tr:nth-child(odd) > td,
+  tbody > tr:nth-child(odd) > th {
+    background: $greyLt;
+  }
+}
+table.table-hover-cell {
+  tbody td:hover, 
+  tbody th:hover,
+  tfoot td:hover, 
+  tfoot th:hover {
+    background: $greyLt;
+  }
+}
+
+table.table-hover-stripe {
+  tbody tr:hover, 
+  tfoot tr:hover {
+    background: $greyLt;
+  }
+}

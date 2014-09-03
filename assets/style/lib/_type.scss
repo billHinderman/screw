@@ -1,0 +1,90 @@
+/************************************************************
+TYPOGRAPHY
+************************************************************/
+
+/******************************
+Default
+******************************/
+body {
+  color: $black;
+  font-family: $sans;
+  font-size: 1em;
+  text-rendering: optimizelegibility;
+}
+
+/******************************
+Headers
+******************************/
+h1, 
+.h1 {
+  font-family: $sans;
+  font-size: 3em;
+  font-weight: 100;
+}
+h2, 
+.h2 {
+  font-family: $heading;
+  font-size: 1.5em;
+  font-weight: 900;
+  line-height: 1.1em;
+
+  @media screen and (min-width: $s-m) {
+    font-size: 2.25em;
+  }
+}
+h3, 
+.h3 {
+  font-family: $sans;
+  font-size: 1.5em;
+  font-weight: 100;
+  line-height: 1.1em;
+}
+h4, 
+.h4 {
+  font-weight: 700;
+  line-height: 1.1em;
+}
+h5, 
+.h5 {
+  font-weight: 300;
+  line-height: 1.1em;
+}
+h6, 
+.h6 {
+  font-size: .75em;
+  line-height: 1.1em;
+}
+
+/******************************
+Copy
+******************************/
+b, 
+.bold {
+  font-weight: 900;
+}
+.light {
+  font-weight: 300;
+}
+.thin {
+  font-weight: 100;
+}
+.italic {
+  font-style: italic !important;
+}
+em {
+  background: $black;
+  color: $white;
+  font-family: $sans;
+  font-size: .75em;
+  font-style: normal;
+  padding: .1667em;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.large {
+  font-size: 1.5em;
+}

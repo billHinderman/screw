@@ -1,0 +1,48 @@
+/************************************************************
+VARS
+************************************************************/
+/******************************
+Colors
+******************************/
+$black: #231f20;
+$blue: #0ac5f4;
+$green: #2ecc71;
+$greyDk: #333333;
+$greyLt: #f0f0f0;
+$greyMd: #6d7377;
+$indigo: #4b0082;
+$maroon: #880e4f;
+$maroon-old: #790f5b;
+$orange: #e67e22;
+$red: #f74224;
+$violet: #43256c;
+$white: #fefefb;
+$yellow: #f1c40f;
+$yellowLt: #fee54e;
+
+$nonwhite: #fafaf8;
+
+/******************************
+Sizes
+******************************/
+$small: 320px;
+$s-m: 640px;
+$medium: 768px;
+$m-l: 840px;
+$large: 960px;
+
+/******************************
+Fonts
+******************************/
+@import url(http://fonts.googleapis.com/css?family=Lato:100,400,900);
+
+$heading: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$mono: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+$sans: "Lato", Helvetica, Arial, sans-serif;
+$serif: "Baskerville", Georgia, Times, "Times New Roman", serif;
+
+/******************************
+Transition
+******************************/
+$transition-standard: .3s cubic-bezier(0.905, 0.015, 0.65, 0.97) 0s;
+$transition-static: .3s;

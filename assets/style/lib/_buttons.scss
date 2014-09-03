@@ -1,0 +1,50 @@
+/************************************************************
+BUTTONS
+************************************************************/
+/******************************
+Base
+******************************/
+button, 
+.button, 
+input[type="submit"], 
+.submit:visited, 
+.button:visited {
+  background: $blue;
+  border: .125em solid $blue;
+  border-radius: 0;
+  color: $white;
+  display: block;
+  cursor: pointer;
+  font-family: $sans;
+  font-size: 1em;
+  font-weight: 900;
+  padding: .5em 1em;
+  position: relative;
+  margin: 2em auto 1em;
+  text-align: left;
+  text-transform: uppercase;
+  width: 280px;
+  -webkit-appearance: none;
+  @include transition(all $transition-static);
+  .fa {
+    position: absolute;
+    right: 1em;
+    top: .65em;
+  }
+  &:hover {
+    background: transparent;
+    color: $blue;
+  }
+  &:disabled {
+    background: $nonwhite;
+    border-color: $nonwhite;
+    color: $white;
+    cursor: default;
+    &.invalid {
+      background: $red;
+      border-color: $red;
+      color: $white;
+      cursor: default;
+    }
+  }
+}

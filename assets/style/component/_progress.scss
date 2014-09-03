@@ -1,0 +1,52 @@
+.progress {
+	display: none;
+	@media screen and (min-width: $medium) {
+		display: table;
+		right: 2em;
+		position: fixed;
+		top: 0;
+		ul {
+			display: table-cell;
+			list-style-type: none;
+			vertical-align: middle;
+			li {
+				border-left: .125em solid $nonwhite;
+				font-size: 1em;
+				height: 2em;
+				position: relative;
+				@include transition(all $transition-static);
+				a {
+					border: none;
+					display: block;
+					left: -.5em;
+					position: absolute;
+					top: -.5em;
+				}
+				&[data-valid="incomplete"],
+				&[data-valid="incomplete"] a {
+					color: $greyLt;
+				}
+				&[data-valid="invalid"],
+				&[data-valid="invalid"] a {
+					color: $red;
+				}
+				&[data-valid="valid"],
+				&[data-valid="valid"] a {
+					color: $blue;
+				}
+				&:last-of-type {
+					height: 0;
+				}
+			}	
+		}
+		li.review {
+			a {
+				color: $greyLt;
+			}
+			&[data-complete="valid"] a {
+				color: $blue;
+			}
+		}
+	}
+	
+}

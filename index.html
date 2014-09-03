@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <title></title>
+            <meta name="description" content="">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <link rel="stylesheet" type="text/css" href="./assets/style/style.css" />
+
+            <script type="text/javascript" src="./assets/script/jquery.min.js"></script>
+            <script type="text/javascript" src="./assets/script/modernizr.js"></script>
+            <script type="text/javascript" src="./assets/script/script.min.js"></script>
+            <script type="text/javascript" src="./assets/script/jspdf/jspdf.js"></script>
+            <script type="text/javascript" src="./assets/script/jspdf/adler32cs.js"></script>
+            <script type="text/javascript" src="./assets/script/jspdf/FileSaver.js"></script>
+            <script type="text/javascript" src="./assets/script/jspdf/BlobBuilder.js"></script>
+        </head>
+        <body>
+            <header class="header">
+                <h1>Screw</h1>
+            </header>
+            <div class="content">
+                <div class="content-container">
+                    <section class="section about">
+                        <p class="important">This is going to be some nice important text. It will span two lines.</p>
+                        <p>You should make sure all the team members sign the napkin, and that you keep it in a safe place.  We won’t store a copy of it here on the site.</p>
+
+                        <p>The napkin is a living document, just like a will (you should have one of those too). As you work on your project, your circumstances might change (for example, you might add a person to your team, or take on some funding). Come back to your napkin each time this happens, and make sure it still reflects what everyone wants.</p>
+
+                        <p>If you take your project forward, and turn it into a business, you should definitely incorporate a company. We’ve written a simple guide to setting up a start-up company here.</p>
+
+                        <p>The napkin only covers some of the options that might be suitable for you and your team, and it’s no replacement for getting advice. If you have any questions, we’d be happy to help.</p>
+
+                        <a class="button start" href="#company">Let's get started <i class="fa fa-chevron-right"></i></a>
+                    </section>
+
+                    <section class="section form f-company" id="company" data-fill="strict" data-valid="incomplete" data-form="0">
+                        <div class="section-content">
+                            <h2>What is the name of your company or group?</h2>
+
+                            <input type="text" name="company" value="" size="40" aria-invalid="false" placeholder="Sterling Cooper & Partners">
+                            <small>Congratulations, by the way.</small>
+
+                            <button class="increment">Next <i class="fa fa-chevron-right"></i></button>
+                        </div>
+                    </section>
+
+                    <section class="section form f-project" id="project" data-fill="strict" data-valid="incomplete" data-form="1">
+                        <div class="section-content">
+                            <h2>What are you making?</h2>
+
+                            <textarea name="project" onkeyup="autoSize(this);" value="" rows="1" aria-invalid="false" placeholder="A curated review service for cemeteries"></textarea>
+                            <small>It's best to start with 'a' or 'an.'</small>
+
+                            <button class="increment">Next <i class="fa fa-chevron-right"></i></button>
+                        </div>
+                    </section>
+
+                    <section class="section form f-team" id="team" data-fill="strict" data-valid="incomplete" data-form="2">
+                        <div class="section-content">
+                            <h2>Who is on your team?</h2>
+
+                            <textarea onkeyup="autoSize(this);" name="team" value="" rows="1" aria-invalid="false" placeholder="Roger Sterling"></textarea>
+                            <small>Separate each team member with a new line.</small>
+
+                            <script>
+                                function autoSize(ele) {
+                                   ele.style.height = 'auto';
+                                   var newHeight = (ele.scrollHeight > 32 ? ele.scrollHeight : 32);
+                                   ele.style.height = newHeight.toString() + 'px';
+                                }
+                            </script>
+
+                            <button class="increment">Next <i class="fa fa-chevron-right"></i></button>
+                        </div>
+                    </section>
+
+                    <section class="section form f-share" id="share" data-fill="strict" data-valid="incomplete" data-form="3">
+                        <div class="section-content">
+                            <h2>How much stake does each team member have in the project?</h2>
+
+
+                            <button class="increment">Next <i class="fa fa-chevron-right"></i></button>
+                        </div>
+                    </section>
+
+                    <section class="section form f-leadership" id="leadership" data-fill="strict" data-valid="incomplete" data-form="4">
+                        <div class="section-content">
+                            <h2>How will you make decisions?</h2>
+
+                            <button class="increment">Next <i class="fa fa-chevron-right"></i></button>
+                        </div>
+                    </section>
+
+                    <section class="section form f-dissolve" id="dissolve" data-fill="strict" data-valid="incomplete" data-form="5">
+                        <div class="section-content">
+                            <h2>If things don't work out, what happens to the project?</h2>
+
+                            <button class="increment">Let's double-check <i class="fa fa-check-square"></i></button>
+                        </div>
+                    </section>
+
+                    <section class="section review" id="review" data-fill data-submittable="false">
+                        <h2>Does this look right?</h2>
+                        <a class="button submit">Download your screw<i class="fa fa-download"></i></a>
+                    </section>
+                </div>
+            </div>
+
+            <div class="progress" data-fill="static">
+                <ul>
+                    <li data-valid="incomplete" data-form="0">
+                        <a href="#company">
+                            <i class="fa fa-circle"></i>
+                        </a>
+                    </li>
+                    <li data-valid="incomplete" data-form="1">
+                        <a href="#project">
+                            <i class="fa fa-circle"></i>
+                        </a>
+                    </li>
+                    <li data-valid="incomplete" data-form="2">
+                        <a href="#team">
+                            <i class="fa fa-circle"></i>
+                        </a>
+                    </li>
+                    <li data-valid="incomplete" data-form="3">
+                        <a href="#share">
+                            <i class="fa fa-circle"></i>
+                        </a>
+                    </li>
+                    <li data-valid="incomplete" data-form="4">
+                        <a href="#leadership">
+                            <i class="fa fa-circle"></i>
+                        </a>
+                    </li>
+                    <li data-valid="incomplete" data-form="5">
+                        <a href="#dissolve">
+                            <i class="fa fa-circle"></i>
+                        </a>
+                    </li>
+                    <li class="review" data-complete="incomplete">
+                        <a href="#review">
+                            <i class="fa fa-circle-o"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="rendered-pdf-hide">
+                <div class="rendered-pdf">
+                    <h1></h1>
+                    <h2></h2>
+                </div>
+            </div>
+
+            <footer class="footer">
+                adsf
+            </footer>
+        </body>
+    </html>
