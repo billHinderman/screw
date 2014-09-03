@@ -1,0 +1,45 @@
+/************************************************************
+INPUT
+************************************************************/
+input:not([type=submit]):not([type=file]):not([type=checkbox]),
+textarea,
+.input,
+select,
+.textarea {
+   background: $white;
+   border: 1px solid $greyMd;
+   color: $greyDk;
+   display: block;
+   font-family: $serif;
+   display: block;
+   font-size: 1em;
+   line-height: 1.25em;
+   min-width: 280px;
+   max-width: 300px;
+   padding: 4px;
+   @include transition(all .3s);
+   &:hover,
+   &:focus {
+   	border-color: $greyDk;
+   	color: $greyDk;
+   }
+   &:invalid {
+   	border-color: $red;
+   }
+   @media screen and (min-width: $medium) {
+   	box-shadow: none;
+   	max-width: none;
+   }
+}
+@media screen and (min-width: $medium) {
+   textarea {
+      min-height: 7em;
+      min-width: 600px;
+   }
+}
+label,
+.label {
+	display: inline-block;
+   font-size: 1.25em;
+	margin-top: 1em;
+}

@@ -1,0 +1,231 @@
+/************************************************************
+TYPOGRAPHY
+************************************************************/
+
+/******************************
+Default
+******************************/
+body {
+  color: $greyDk;
+  font-family: $sans;
+  font-size: 1em;
+  text-rendering: optimizelegibility;
+}
+
+/******************************
+Font Options
+******************************/
+.font-heading {
+  font-family: $heading;
+}
+.font-mono {
+  font-family: $mono;
+}
+.font-sans {
+  font-family: $sans;
+}
+.font-serif {
+  font-family: $serif;
+}
+
+/******************************
+Headers
+******************************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  max-width: 44em;
+}
+h1, 
+.h1 {
+  font-family: $heading;
+  font-size: 4em;
+  font-weight: 100;
+  padding: .5em;
+  text-transform: uppercase;
+}
+h2, 
+.h2 {
+  font-family: $heading;
+  font-size: 2.25em;
+  font-weight: 100;
+  line-height: 1.1em;
+  padding: .25em 0;
+  text-transform: lowercase;
+}
+h3, 
+.h3 {
+  font-family: $heading;
+  font-size: 1.5em;
+  font-weight: 100;
+  line-height: 1.1em;
+  padding: .25em 0;
+}
+h4, 
+.h4 {
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 1.1em;
+  padding-top: .25em;
+}
+h5, 
+.h5 {
+  font-weight: 700;
+  line-height: 1.1em;
+  padding-top: .25em;
+}
+h6, 
+.h6 {
+  font-size: .75em;
+  line-height: 1.1em;
+  padding-top: .5em;
+}
+
+/******************************
+Copy
+******************************/
+p, 
+.p {
+  line-height: 1.25em;
+  margin-bottom: 1em;
+  max-width: 44em;
+}
+b, 
+.bold {
+  font-weight: 700;
+}
+.light {
+  font-weight: 300;
+}
+.thin {
+  font-weight: 100;
+}
+em, .italic {
+  font-style: italic;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.large {
+  font-size: 1.5em;
+}
+small, .small {
+  font-size: .75em;
+}
+
+/******************************
+Lists
+******************************/
+ol, 
+ul {
+  display: block;
+  padding: 0;
+  &.inline {
+    list-style: none;
+    margin-left: 0;
+    li {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+    }
+  }
+  &.unstyled {
+    list-style: disc;
+    margin-left: 0;
+  }
+  ol, 
+  ul {
+    margin-bottom: 0;
+  }
+}
+ol {
+  list-style: decimal;
+}
+ul {
+  list-style: none;
+}
+dl {
+  margin: .5em 0;
+  dd {
+    margin-left: .5em;
+  }
+  dt {
+    font-weight: 700;
+  }
+}
+.list-title {
+  font-weight: 700;
+  margin-bottom: .25em;
+}
+
+/******************************
+Aside
+******************************/
+aside,
+ .aside {
+  background: $greyLt;
+  color: $greyDk;
+  font-size: .75em;
+  margin-top: 1em;
+  padding: .25em 1em;
+}
+
+/******************************
+Quote
+******************************/
+blockquote, 
+q, 
+.blockquote,
+.quote {
+  font-family: $serif;
+  font-size: 1.5em;
+  margin: .5em 0;
+  &.callout {
+    border-left: 1px dotted $greyMd;
+    padding-left: .5em;
+  }
+
+  small, .small {
+    font-family: $sans;
+    font-size: .5em;
+    margin-left: 1em;
+  }
+}
+
+/******************************
+Address
+******************************/
+address, 
+.address {
+  margin: .5em 0;
+}
+
+/******************************
+Code
+******************************/
+code, 
+pre,
+.code,
+.pre {
+  display: block;
+  font-family: $mono;
+  font-size: 1.25em;
+  margin: .5em 0;
+
+  &.callout {
+    border: 1px dotted $greyMd;
+    padding: .5em;
+  }
+}

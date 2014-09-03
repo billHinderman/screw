@@ -1,0 +1,58 @@
+.scroll-shadow {
+	background:
+			linear-gradient($white 30%, rgba(255,255,255,0)),
+			linear-gradient(rgba(255,255,255,0), $white 75%) 0 100%,
+			radial-gradient(farthest-side at 50% 0, rgba(0,0,0,.25), rgba(0,0,0,0)),
+			radial-gradient(farthest-side at 50% 100%, rgba(0,0,0,.25), rgba(0,0,0,0)) 0 100%;
+		background-attachment: local, local, scroll, scroll;
+		background-repeat: no-repeat;
+		background-size: 100% 24px, 100% 24px, 100% 8px, 100% 8px;
+}
+
+.float-left.square,
+.float-right.square,
+.display-inline-block.square {
+	background-size: cover;
+  position: relative;
+  
+  &.sq-quarter {
+    width: 25%;
+  }
+  &.sq-half {
+    width: 50%;
+  }
+  &.sq-three-quarter {
+    width: 75%;
+  }
+  &.sq-full {
+    width: 100%;
+  }
+  @media screen and (min-width: $medium) {
+    .shape {
+      margin-top: 100%;
+    }
+    .element {
+    	bottom: 0;
+      left: 0;
+    	position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+.black-dot {
+  background: radial-gradient(circle, $greyDk 10%, transparent 10%),
+    radial-gradient(circle, $greyDk 10%, transparent 10%) 4px 4px;
+  background-size: 7px 7px;
+}
+.red-dot {
+  background: radial-gradient(circle, $red 10%, transparent 10%),
+    radial-gradient(circle, $red 10%, transparent 10%) 4px 4px;
+  background-size: 7px 7px;
+}
+.white-dot {
+  background: radial-gradient(circle, $white 10%, transparent 10%),
+    radial-gradient(circle, $white 10%, transparent 10%) 4px 4px;
+  background-size: 7px 7px;
+}

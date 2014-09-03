@@ -1,0 +1,52 @@
+/************************************************************
+VARS
+************************************************************/
+/******************************
+Colors
+******************************/
+$black: #231f20;
+$blue: #0ac5f4;
+$greyDk: #333333;
+$greyLt: #f0f0f0;
+$greyMd: #bdc3c7;
+$indigo: #4b0082;
+$orange: #e67e22;
+$red: #e74c3c;
+$violet: #8e44ad;
+$white: #fdfdfd;
+$yellow: #f1c40f;
+
+$green: #01a532;
+$plum: #c41f4b;
+
+$fullRed: #FF0000;
+$fullGreen: #00FF00;
+$fullBlue: #0000FF;
+
+/******************************
+Sizes
+******************************/
+$small: 320px;
+$s-m: 640px;
+$medium: 768px;
+$m-l: 960px;
+$large: 1024px;
+
+/******************************
+Fonts
+******************************/
+
+$heading: "Lato", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+$mono: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+$sans: "Lato", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+$serif: Georgia, Times, "Times New Roman", serif;
+
+
+
+@mixin transition($transition: all .3s) {
+  -webkit-transition: $transition;  
+  -moz-transition: $transition;
+  -ms-transition: $transition; 
+  -o-transition: $transition;  
+  transition: $transition;
+}

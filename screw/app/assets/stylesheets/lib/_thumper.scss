@@ -1,0 +1,46 @@
+.thumper {
+	height: 100px;
+	margin: auto;
+	width: 100px;
+}
+
+.thumper-content, .thumper-content:before, .thumper-content:after {
+  animation: rotate linear infinite;
+  border: 5px solid transparent;
+  border-radius: 50%;
+  border-top: 5px solid $greyDk;
+  content: '';
+  position: absolute;
+}
+.microcontent-content {
+	.thumper-content, .thumper-content:before, .thumper-content:after {
+		border-top-color: $white;
+	}
+}
+.thumper-content {
+  animation-duration: 1s;
+  height: 100px;
+  width: 100px;
+  &:after {
+  	animation-duration: 4s;
+  	height: 50px;
+	  left: 22px;
+	  top: 22px;
+	  width: 50px;
+  }
+  &:before {
+  	animation-duration: 10s;
+  	height: 75px;
+	  left: 10px;
+	  top: 10px;
+	  width: 75px;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotateZ(360deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
