@@ -4,8 +4,17 @@
 	padding: 6em 1em 2em;
 	text-align: center;
 	h1 {
-		display: inline;
+		display: block;
 		font-size: 6em;
+		margin-top: -1.5em;
+		vertical-align: middle;
 		text-transform: uppercase;
+	}
+	img {
+		display: block;
+		
+		margin: auto;
+		height: 192px;
+		width: 192px;
 	}
 }

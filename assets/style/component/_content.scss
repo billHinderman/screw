@@ -38,4 +38,14 @@
 	background: $nonwhite;
 	padding: 1em;
 	margin: 1em -1em 0;
+	&[data-submittable="false"] {
+		.submittable {
+			display: none;
+		}
+	}
+	&[data-submittable="true"] {
+		.unsubmittable {
+			display: none;
+		}
+	}
 }

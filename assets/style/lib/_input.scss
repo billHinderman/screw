@@ -41,3 +41,47 @@ small {
     font-size: 1em;
   }
 }
+
+ul.options-list {
+  font-family: $serif;
+  font-size: 1.25em;
+  line-height: 1.1em;
+  list-style-type: none;
+  li {
+    cursor: pointer;
+    margin-bottom: 1em;
+    position: relative;
+    @include transition(all $transition-static);
+    &:hover {
+      color: $blue;
+    }
+    &:first-of-type {
+      margin-top: 1em;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  li.selected {
+    $color: $blue;
+    .radio {
+      background: $blue;
+    }
+  }
+  @media screen and (min-width: $s-m) {
+    font-size: 2em;
+  }
+  .radio {
+   background: $white;
+   border: .0875em solid;
+   border-radius: 50%;
+   display: inline-block;
+   content: " ";
+   height: 1em;
+   vertical-align: bottom;
+   width: 1em;
+  }
+  .option-text {
+    display: inline;
+  }
+}

@@ -12,12 +12,15 @@ input[type="submit"],
   background: $blue;
   border: .125em solid $blue;
   border-radius: 0;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
   color: $white;
   display: block;
   cursor: pointer;
   font-family: $sans;
   font-size: 1em;
   font-weight: 900;
+  outline: none !important;
   padding: .5em 1em;
   position: relative;
   margin: 2em auto 1em;
@@ -38,6 +41,7 @@ input[type="submit"],
   &:disabled {
     background: $nonwhite;
     border-color: $nonwhite;
+    border-radius: 0 !important;
     color: $white;
     cursor: default;
     &.invalid {

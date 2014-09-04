@@ -85,11 +85,11 @@ body {
   color: #231f20; }
 
 ::selection {
-  background: #f1c40f;
+  background: #0ac5f4;
   color: #231f20; }
 
 ::-moz-selection {
-  background: #f1c40f;
+  background: #0ac5f4;
   color: #231f20; }
 
 /******************************
@@ -669,6 +669,43 @@ small {
     small {
       font-size: 1em; } }
 
+ul.options-list {
+  font-family: "Baskerville", Georgia, Times, "Times New Roman", serif;
+  font-size: 1.25em;
+  line-height: 1.1em;
+  list-style-type: none; }
+  ul.options-list li {
+    cursor: pointer;
+    margin-bottom: 1em;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    ul.options-list li:hover {
+      color: #0ac5f4; }
+    ul.options-list li:first-of-type {
+      margin-top: 1em; }
+    ul.options-list li:last-of-type {
+      margin-bottom: 0; }
+  ul.options-list li.selected .radio {
+    background: #0ac5f4; }
+  @media screen and (min-width: 640px) {
+    ul.options-list {
+      font-size: 2em; } }
+  ul.options-list .radio {
+    background: #fefefb;
+    border: .0875em solid;
+    border-radius: 50%;
+    display: inline-block;
+    content: " ";
+    height: 1em;
+    vertical-align: bottom;
+    width: 1em; }
+  ul.options-list .option-text {
+    display: inline; }
+
 /************************************************************
 IMAGE
 ************************************************************/
@@ -699,12 +736,15 @@ input[type="submit"],
   background: #0ac5f4;
   border: 0.125em solid #0ac5f4;
   border-radius: 0;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
   color: #fefefb;
   display: block;
   cursor: pointer;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 1em;
   font-weight: 900;
+  outline: none !important;
   padding: .5em 1em;
   position: relative;
   margin: 2em auto 1em;
@@ -739,6 +779,7 @@ input[type="submit"],
   .button:visited:disabled {
     background: #fafaf8;
     border-color: #fafaf8;
+    border-radius: 0 !important;
     color: #fefefb;
     cursor: default; }
     button:disabled.invalid,
@@ -2356,14 +2397,25 @@ input[type="submit"],
   padding: 6em 1em 2em;
   text-align: center; }
   .header h1 {
-    display: inline;
+    display: block;
     font-size: 6em;
+    margin-top: -1.5em;
+    vertical-align: middle;
     text-transform: uppercase; }
+  .header img {
+    display: block;
+    margin: auto;
+    height: 192px;
+    width: 192px; }
 
 .footer {
-  background: #0ac5f4;
-  color: #fefefb;
-  padding: .5em; }
+  background: #fefefb;
+  color: #231f20;
+  font-size: .75em;
+  font-weight: 400;
+  padding: .5em;
+  text-align: center;
+  text-transform: uppercase; }
 
 .error-title {
   background: #fefefb;
@@ -2419,3 +2471,7 @@ input[type="submit"],
   background: #fafaf8;
   padding: 1em;
   margin: 1em -1em 0; }
+  .section.review[data-submittable="false"] .submittable {
+    display: none; }
+  .section.review[data-submittable="true"] .unsubmittable {
+    display: none; }
