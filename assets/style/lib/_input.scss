@@ -51,7 +51,7 @@ ul.options-list {
     cursor: pointer;
     margin-bottom: 1em;
     position: relative;
-    @include transition(all $transition-static);
+    @include transition(color $transition-static);
     &:hover {
       color: $blue;
     }
@@ -63,9 +63,10 @@ ul.options-list {
     }
   }
   li.selected {
-    $color: $blue;
+    color: $blue;
     .radio {
       background: $blue;
+      border-color: $blue;
     }
   }
   @media screen and (min-width: $s-m) {
@@ -78,6 +79,7 @@ ul.options-list {
    display: inline-block;
    content: " ";
    height: 1em;
+   @include transition(all $transition-static);
    vertical-align: bottom;
    width: 1em;
   }

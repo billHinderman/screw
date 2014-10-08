@@ -1,6 +1,6 @@
 // @codekit-append "agent/background.js"
-// @codekit-append "agent/button.js"
 // @codekit-append "agent/collapse.js"
+// @codekit-append "agent/dissolve.js"
 // @codekit-append "agent/fill.js"
 // @codekit-append "agent/lettering.js"
 // @codekit-append "agent/lightbox.js"
@@ -8,3 +8,4 @@
 // @codekit-append "agent/nav.js"
 // @codekit-append "agent/smooth.js"
 // @codekit-append "agent/thumper.js"
+// @codekit-append "agent/validate.js"

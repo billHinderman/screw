@@ -678,19 +678,22 @@ ul.options-list {
     cursor: pointer;
     margin-bottom: 1em;
     position: relative;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s; }
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s; }
     ul.options-list li:hover {
       color: #0ac5f4; }
     ul.options-list li:first-of-type {
       margin-top: 1em; }
     ul.options-list li:last-of-type {
       margin-bottom: 0; }
-  ul.options-list li.selected .radio {
-    background: #0ac5f4; }
+  ul.options-list li.selected {
+    color: #0ac5f4; }
+    ul.options-list li.selected .radio {
+      background: #0ac5f4;
+      border-color: #0ac5f4; }
   @media screen and (min-width: 640px) {
     ul.options-list {
       font-size: 2em; } }
@@ -701,6 +704,11 @@ ul.options-list {
     display: inline-block;
     content: " ";
     height: 1em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
     vertical-align: bottom;
     width: 1em; }
   ul.options-list .option-text {
@@ -772,21 +780,21 @@ input[type="submit"],
   .button:visited:hover {
     background: transparent;
     color: #0ac5f4; }
-  button:disabled,
-  .button:disabled,
-  input[type="submit"]:disabled,
-  .submit:visited:disabled,
-  .button:visited:disabled {
+  button.disabled,
+  .button.disabled,
+  input[type="submit"].disabled,
+  .submit:visited.disabled,
+  .button:visited.disabled {
     background: #fafaf8;
     border-color: #fafaf8;
     border-radius: 0 !important;
     color: #fefefb;
     cursor: default; }
-    button:disabled.invalid,
-    .button:disabled.invalid,
-    input[type="submit"]:disabled.invalid,
-    .submit:visited:disabled.invalid,
-    .button:visited:disabled.invalid {
+    button.disabled.invalid,
+    .button.disabled.invalid,
+    input[type="submit"].disabled.invalid,
+    .submit:visited.disabled.invalid,
+    .button:visited.disabled.invalid {
       background: #f74224;
       border-color: #f74224;
       color: #fefefb;

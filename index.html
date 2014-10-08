@@ -47,7 +47,7 @@
                             <input type="text" name="company" value="" size="40" aria-invalid="false" placeholder="Sterling Cooper & Partners">
                             <small>Congratulations, by the way.</small>
 
-                            <button class="increment">Next <i class="fa fa-chevron-right"></i></button>
+                            <a class="button disabled increment" href="#project">Next <i class="fa fa-chevron-right"></i></a>
                         </div>
                     </section>
 
@@ -58,7 +58,7 @@
                             <textarea name="project" onkeyup="autoSize(this);" value="" rows="1" aria-invalid="false" placeholder="A curated review service for pet cemeteries"></textarea>
                             <small>It's best to start with 'a' or 'an.'</small>
 
-                            <button class="increment">Next <i class="fa fa-chevron-right"></i></button>
+                            <a class="button disabled increment" href="#team">Next <i class="fa fa-chevron-right"></i></a>
                         </div>
                     </section>
 
@@ -77,7 +77,7 @@
                                 }
                             </script>
 
-                            <button class="increment">Next <i class="fa fa-chevron-right"></i></button>
+                            <a class="button disabled increment" href="#share">Next <i class="fa fa-chevron-right"></i></a>
                         </div>
                     </section>
 
@@ -92,7 +92,7 @@
                                 </li>
                             </ul>
 
-                            <button class="increment">Next <i class="fa fa-chevron-right"></i></button>
+                            <a class="button disabled increment" href="#leadership">Next <i class="fa fa-chevron-right"></i></a>
                         </div>
                     </section>
 
@@ -123,7 +123,7 @@
                                 </li>
                             </ul>
 
-                            <button class="increment">Next <i class="fa fa-chevron-right"></i></button>
+                            <a class="button disabled increment" href="#dissolve">Next <i class="fa fa-chevron-right"></i></a>
                         </div>
                     </section>
 
@@ -150,7 +150,7 @@
                                 </li>
                             </ul>
 
-                            <button class="increment">Let's double-check <i class="fa fa-check-square"></i></button>
+                            <a class="button disabled increment" href="#review">Let's double-check <i class="fa fa-check-square"></i></a>
                         </div>
                     </section>
 
@@ -160,7 +160,7 @@
                         </div>
                         <div class="submittable">
                             <h2>Does this look correct?</h2>
-                            <a class="button submit">Download your screw<i class="fa fa-download"></i></a>
+                            <a class="button disabled submit">Download your screw<i class="fa fa-download"></i></a>
                         </div>
                     </section>
                 </div>
@@ -219,3 +219,16 @@
             </footer>
         </body>
     </html>
+<script type="text/javascript">
+ $(document).ready(function () {
+ $('#btnTweet').click(function (e) {
+ alert('hello11');
+ var textToTweet = "Hi I am tweeting from here";
+ else {
+ var twtLink = 'http://twitter.com/home?status=' +encodeURIComponent(textToTweet);
+ window.open(twtLink,'_blank');
+ }
+ });
+ });
+ 
+</script>

@@ -38,7 +38,7 @@ input[type="submit"],
     background: transparent;
     color: $blue;
   }
-  &:disabled {
+  &.disabled {
     background: $nonwhite;
     border-color: $nonwhite;
     border-radius: 0 !important;
